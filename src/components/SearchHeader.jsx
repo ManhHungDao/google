@@ -31,8 +31,8 @@ const SearchHeader = () => {
           <button className="btn-signIn">Sign in</button>
         </div>
       </div>
-      <div className="lg:hidden block">
-        <div className="flex justify-between items-center p-5">
+      <div className="lg:hidden block p-3">
+        <div className="flex justify-between items-center p-3">
           <Link href="/">
             <AiOutlineMenu className="header-icons" />
           </Link>

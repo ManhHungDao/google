@@ -1,16 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiSearch } from "react-icons/bi";
 import { RxCross1 } from "react-icons/rx";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const SearchBarHeader = () => {
   const searchParams = useSearchParams();
-  const searchTerms = searchParams.get("searchTerm");
-  const [term, setTerm] = useState(searchTerms || "");
+  const [term, setTerm] = useState("");
   const router = useRouter();
+
+  useEffect(() => {
+    if (!searchParams) return;
+    const searchTerms = searchParams.get("searchTerm");
+    setTerm(searchTerms);
+  }, [searchParams]);
 
   const handleEnter = (e) => {
     if (!term.trim()) return;
