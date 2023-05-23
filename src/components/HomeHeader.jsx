@@ -16,15 +16,10 @@ const HomeHeader = () => {
       >
         Images
       </Link>
-      <Link
-        href="/"
-        className="p-2 rounded-full hover:bg-gray-300 c cursor-pointer"
-      >
-        <TbGridDots className="font-bold text-lg" />
+      <Link href="/">
+        <TbGridDots className="header-icons" />
       </Link>
-      <button className="px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:opacity-80 hover:shadow-md transition-shadow">
-        Sign in
-      </button>
+      <button className="btn-signIn">Sign in</button>
     </header>
   );
 };

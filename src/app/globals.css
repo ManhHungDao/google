@@ -10,4 +10,12 @@
   .link {
     @apply cursor-pointer hover:underline underline-offset-2;
   }
+
+  .header-icons{
+    @apply font-bold p-2 rounded-full hover:bg-gray-200 cursor-pointer bg-transparent text-4xl
+  }
+
+  .btn-signIn {
+    @apply px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:opacity-80 hover:shadow-md transition-shadow
+  }
 }
