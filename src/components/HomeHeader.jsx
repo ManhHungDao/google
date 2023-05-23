@@ -3,7 +3,7 @@ import React from "react";
 import { TbGridDots } from "react-icons/tb";
 const HomeHeader = () => {
   return (
-    <header className="flex items-center justify-end gap-7 m-2 font-medium">
+    <header className="flex items-center justify-end gap-3 m-2">
       <Link
         href="/"
         className="cursor-pointer hover:underline underline-offset-4 decoration-2"
