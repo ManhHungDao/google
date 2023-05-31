@@ -1,11 +1,11 @@
 import SearchHeader from '@/components/SearchHeader'
-import SearchHeaderoptions from '@/components/SearchHeaderoptions'
+import SearchHeaderOptions from '@/components/SearchHeaderOptions'
 
 export default function SearchLayout({ children }) {
   return (
     <>
         <SearchHeader/>
-        <SearchHeaderoptions/>
+        <SearchHeaderOptions/>
         {children}
     </>
   )

@@ -5,7 +5,7 @@ import React from "react";
 import { BiSearch, BiImage } from "react-icons/bi";
 import { useRouter, useSearchParams } from "next/navigation";
 
-const SearchHeaderoptions = () => {
+const SearchHeaderOptions = () => {
   const searchParams = useSearchParams();
   const searchTerms = searchParams.get("searchTerm");
   const pathName = usePathname();
@@ -26,7 +26,7 @@ const SearchHeaderoptions = () => {
           onClick={() => router.push(`/search/web?searchTerm=${searchTerms}`)}
         >
           <BiSearch className="text-sm" />
-          <span className="font-medium">All</span>
+          <span>All</span>
         </div>
         <div
           className={`
@@ -40,7 +40,7 @@ const SearchHeaderoptions = () => {
           onClick={() => router.push(`/search/image?searchTerm=${searchTerms}`)}
         >
           <BiImage className="text-sm" />
-          <span className="font-medium">Images</span>
+          <span>Images</span>
         </div>
       </div>
       <hr />
@@ -48,4 +48,4 @@ const SearchHeaderoptions = () => {
   );
 };
 
-export default SearchHeaderoptions;
+export default SearchHeaderOptions;
