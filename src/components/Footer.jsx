@@ -3,7 +3,7 @@ import CountryLocal from "./CountryLocal";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f2f2f2] absolute bottom-0 w-full text-sm text-gray-500 ">
+    <footer className="bg-[#f2f2f2] fixed bottom-0 w-full text-sm text-gray-500 ">
       <div className="py-3 px-5 link">
         <CountryLocal />
       </div>
