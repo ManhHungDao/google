@@ -14,7 +14,7 @@ const WebSearchPage = async ({ searchParams }) => {
   return (
     <div>
       {data ? (
-        <Result data={data} />
+        <Result data={data} type="web" />
       ) : (
         <div className="flex justify-center">
           <h1>No Results Found</h1>
