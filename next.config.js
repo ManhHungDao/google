@@ -7,7 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-    domains: ["cdn.shopify.com"],
+    domains: ["cdn.shopify.com", "static1.squarespace.com"],
   },
 };
 
